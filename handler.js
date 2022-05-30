@@ -763,11 +763,11 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
             "fileLength": "99999999999999",
             "pageCount": 100,
             "mediaKey": "XWv4hcnpGY51qEVSO9+e+q6LYqPR3DbtT4iqS9yKhkI=",
-            "fileName": 'By : Adri',
+            "fileName": 'By : Fachri',
             "fileEncSha256": "NI9ykWUcXKquea4BmH7GgzhMb3pAeqqwE+MTFbH/Wk8=",
             "directPath": "/v/t62.7118-24/35150115_287008086621545_8250021012380583765_n.enc?ccb=11-4&oh=6f0f730e5224c054969c276a6276a920&oe=61A21F46",
             "mediaKeyTimestamp": "1634472176",
-            "jpegThumbnail": await (await fetch('https://telegra.ph/file/8212340502d985bec0e93.jpg')).buffer(),
+            "jpegThumbnail": await (await fetch('https://telegra.ph/file/5caed401ffd3a2bf721d4.jpg')).buffer(),
   }}, 'buttonsMessage', { quoted: false, contextInfo: { mentionedJid: [user], forwardingScore: 999, isForwarded: true, externalAdReply: { title: global.wm, body: action === 'add' ? 'Selamat Datang Kak!' : 'Yahh.. kok keluar :‹', description: action === 'add' ? 'Selamat Datang Kak!' : 'Yahh.. kok keluar :‹', mediaType: 2, thumbnail: action === 'add' ? wel : lea, mediaUrl: `https://youtube.com/watch?v=uIedYGN3NQQ`}}})
               
             }
@@ -780,7 +780,7 @@ await conn.sendMessage(jid, { "contentText": action === 'add' ? '─────
         if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         let banp = fs.readFileSync('./src/kanna.jpg')
-        if (chat.detect) this.send2ButtonLoc(jid, banp, text, '🎮 SlimeBotz', 'MENU', '#menu', 'OWNER', '#owner', null, {
+        if (chat.detect) this.send2ButtonLoc(jid, banp, text, 'ᴹᴿ᭄𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕ོン.', 'MENU', '#menu', 'OWNER', '#owner', null, {
           contextInfo: {
             mentionedJid: this.parseMention(text)
           }
