@@ -1,16 +1,17 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let fetch = require('node-fetch')
 let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Source+code'
-let info = `╭═[ *SCRIPT* ]═────···
+let info = `╭═[ *SCRIPT FACHRIBOTZ* ]═────···
 ┴
-│ *Script :* 60K (No node_module)
+│ *Recode :*
+│ ╰ 
 │ *Base :*
 │ ╰ https://github.com/nurutomo/wabot-aq
 │ *RestApi :* 
 │ ╰ https://hardianto.xyz
 ┬
 ╰──────────═┅═──────────
-[❗] Jangan diperjual belikan tanpa seizin owner
+[❗] Jangan Lupa Kasih Starnya Kak
 `.trim()
 await conn.send2Button(m.chat, info, `${botol}`, '⋮☰ Back', '.menu', 'Owner', '.nowner', m)
 conn.reply(info)
