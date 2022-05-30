@@ -51,8 +51,8 @@ function pickRandom(list) {
 }*/
 
 global.DeveloperMode = 'false' //Buat Mode True False Moderator
-global.linkGC = ['https://chat.whatsapp.com/F9dPQcOf82Z4Dc9uxE7Kh0'] // ganti jadi group lu
-global.owner = ['6281354079196'] // Ganti jadi nomor lu ajg nanti ngechat bot lu pas sv database
+global.linkGC = ['https://chat.whatsapp.com/GimZmhA2XTQFfPXk4XMrv6'] // ganti jadi group lu
+global.owner = ['6285713041886'] // Ganti jadi nomor lu ajg nanti ngechat bot lu pas sv database
 global.mods = [] // Want some help?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -89,13 +89,13 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Slime'
-global.author = '۰ By Adri'
+global.packname = '𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕'
+global.author = '۰ By Fachri'
 
 // silakan di ganti klo mau
-global.botwm = `🎮 SlimeBotz`//UBAH JADI NAMAMU
+global.botwm = `ᴹᴿ᭄𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕ོン.`//UBAH JADI NAMAMU
 global.botdate = `╭──────────═┅═─────────\n│◪ ${time}\n┊◪ ${week} ${date}\n╰──────────═┅═─────────`
-global.imagebot = `https://telegra.ph/file/8212340502d985bec0e93.jpg`
+global.imagebot = `https://telegra.ph/file/5caed401ffd3a2bf721d4.jpg`
 global.logo = fs.readFileSync('./src/logo3.jpg')
 global.logoowner = fs.readFileSync('./src/owner.jpg')
 global.wait = '```[ ! ] wait...```'
