@@ -11,7 +11,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭─────═[ *INFO PENGGUNA* ]═─────⋆
+╭─────═[ *INFO USER* ]═─────⋆
 │╭───────────────···
 ┴│▸ *Name:* %name
 ⬡│▸ *Premium:* %prems
@@ -30,7 +30,7 @@ const defaultMenu = {
 ⬡│▸ *Tanggal Islam:* %dateIslamic
 ┬│▸ *Waktu:* %time
 │╰────────────────···
-┠─────═[ *BOT INFO* ]═─────⋆
+┠─────═[ *INFO BOT* ]═─────⋆
 │╭────────────────···
 ┴│▸ *Nama Bot:* %me
 ⬡│▸ *Mode:* ${global.opts['self'] ? 'Private' : 'Publik'}
@@ -268,11 +268,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ┬
 ├━━━━━━━━━━━━━━━━┈─⋆
-│ ▸ *Author :* Nurutomo
-┴ ▸ *Owner :* Adri
+┴ ▸ *Owner :* 𝙁𝘼𝘾𝙃𝙍𝙄 
 ✧
-┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
-│ Tolong jangan dispam ya biar ga delay
+┬ 📌 Note :
+│ Beri Jeda Kak Biar ga Delay ")
 ╰━━━━━━━━━━━━━━━━┈─◂
      ▌│█║▌║▌║║▌║▌║█│▌
      
@@ -283,7 +282,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             {
                                 "rows": [{
                                          "title": "[📊] Status",
-                                         "description": "Status Kanna Bot",
+                                         "description": "Status Fachri Bot",
                                          "rowId": ".botstat"
                                     }, {
                                          "title": "[⚡] Speed",
@@ -532,7 +531,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    // await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), '🎮 SlimeBotz', 'Creator', '.creator', 'Donasi', '.donasi', 'Rules', '.infobot', m)
+    // await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'ᴹᴿ᭄𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏𝙕ོン.', 'Creator', '.creator', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     await conn.send3ButtonLoc(m.chat, logo, '──────────[ *DASHBOARD* ]──────────', text.trim(), 'Creator', '.creator', 'Donasi', '.donasi', 'Rules', '.rules', m)
     let nama = await conn.getName(m.sender)
     let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
@@ -550,7 +549,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "productId": "4938174216214248",
         "title": '✧───────···[ Menu ]···────────✧',
         "description": `\n${wm}\n` + text,
-        "retailerId": `${week}, ${date}  |  BY ADRI ‷♪`,
+        "retailerId": `${week}, ${date}  |  BY 𝙁𝘼𝘾𝙃𝙍𝙄 ‷♪`,
         "url": '\n',
         "descriptionCount": "999999999",
         "productImageCount": "1",
